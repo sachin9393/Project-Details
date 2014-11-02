@@ -12,3 +12,5 @@ offers many applications, especially in video surveillance, biometrics, or video
 detected region. A software version of the algorithm was independently implemented and
 tested on still pictures in MATLAB. All calculation of the hardware implementation was done in real time with minimal
 computational effort, thus suitable for power-limited applications.
+
+
