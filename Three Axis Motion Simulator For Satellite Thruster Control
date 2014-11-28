@@ -2,7 +2,7 @@
 
 
 
-A Project Synopsis on
+**A Project Synopsis on**
 “Three Axis Motion Simulator for Satellite Thruster Control”
 
 Submitted by
@@ -19,37 +19,20 @@ Department of Electronics & Communication Engineering
 October 2014
 
 
+	
 
-Batch Number:	
-
-Project Title:	“Three Axis Motion Simulator for Satellite Thruster Control”
+Project Title:	                                “Three Axis Motion Simulator for Satellite Thruster Control”
 Place where project is being carried out:	ISAC – ISRO Satellite Centre
-External Guide:
-Contact Details:	
-Name and signature of internal guide	
-Date of Submission:	6/11/2014
+Date of Submission:                        	6/11/2014
 
 	Sachin Vishwanath	9731854093	sachin.9393@gmail.com	
 	
-
-
-
-
-
-
-
-
- 
-
 INTRODUCTION
 
 Propulsion and Movement
           
 Spacecraft propulsion is any method that is used to accelerate or manoeuvre a satellite be it in the atmosphere or space. A very common method of doing this is to propel by using gas that is coming out of a very high speed from one of the ends. This can be used to either propel or halt an already moving spacecraft. It can also be used to tilt or manoeuvre it. The gas is propelled at a very high speed using a supersonic De Laval Nozzle. The engine used is called a rocket engine. The most common type of fuel used is either a bi-propellent or a solid fuel for the launching and simple mono-propellent chemical thrusters or resistojet rockets for orbital station keeping.
 Once the satellite has been placed in the orbit,it will experience a drag from the Earth’s thin atmosphere. Due to this, corrective measures are often performed by propulsion. A satellites life is said to be over once it cannot perform any corrective manoeuvres and is dragged into the Earth’s atmosphere.
-
-An image of a thruster:-
-
 
 Propulsion and movement comes into the picture when a specific satellite such as a weather forecasting satellite, a mapping satellite, a defense satellite or any outer space observatory satellite has to focus at a particular spot on Earth or a specific portion of space. This is done with the help of electronically controlled set of thrusters. The number of thrusters used per satellite can be varying compared to the physical aspects of the satellite. A satellite can be raised, lowered or tilted at a specific angle depending upon the area of focus. This is achieved by firing either a single or a set of thrusters in order to vary the alignment of the satellite with respect to a reference axis. 
 Motivation 
@@ -62,7 +45,9 @@ Scope of the project that is undertaken is immense, one of the primary applicati
 a.	Thruster action time (ta) - The time the thruster is active ( this report would remain the same irrespective of the environment which is used,hence it would be synonymous with regards to our project and the main model)
 b.	Thruster rise time: Thruster tail off time,minimum impulse bit - With respect to all the above mentioned , the reports would give a parallel idea comparing our project and to the applied system.
 Small scale satellites have a lot of application but unless an appropriate thruster is used,their scope is limited.With the onset of this project, a basic development tool will be established that can used in plethora of activities.One major aspect of this project would be to develop a model which carries out majority of the information to be extracted and also help in providing a cheaper alternative for the different run time data that needs to be calculated.Once completed,the model can be fine-tuned for analysis which are required for that particular project. 
+
 Description
+
 Technical details with block diagram:
 The said system is a combination of a computer based user interface, an intermediate controller and the actual model used for simulation. The function of each is explained as follows:
 ●	A computer based interface is used to deliver commands to the system in terms of thruster firing triggers. For example, a given system with eight thrusters placed at all corners of the satellite, a thruster or a group of thrusters is selected and a preset firing time is input. This command is sent through a serial interface to the controller
@@ -94,11 +79,14 @@ Through this project, we intend to provide an alternative, low-cost and a simple
 
 
 References
+
 1.	Satellite Architecture - By Dr.K . Badari Narayana and others -ISRO
 2.	Chandrayaan-2 module -(internal document) - ISRO
 3.	MODELING AND SIMULATION OF A SATELLITE PROPULSION SUBSYSTEM  - Leonardo Leite Oliva 
 4.	NASA’s Electric Propulsion Program - John W. Dunning, Jr., Scott Benson, Steven Oleson National Aeronautics and Space Administration
+
 Websites - 
+
 www.ieeexplore.ieee.org
 www.newsoffice.mit.edu 
 www.dlr.de 
