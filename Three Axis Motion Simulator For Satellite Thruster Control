@@ -1,1 +1,105 @@
-.
+
+
+
+
+A Project Synopsis on
+“Three Axis Motion Simulator for Satellite Thruster Control”
+
+Submitted by
+
+
+Student Name
+              -    Sachin Vishwanath 
+
+
+
+B.N.M. Institute Of Technology
+Banashankari 2nd Stage, Bangalore - 560 070
+Department of Electronics & Communication Engineering
+October 2014
+
+
+
+Batch Number:	
+
+Project Title:	“Three Axis Motion Simulator for Satellite Thruster Control”
+Place where project is being carried out:	ISAC – ISRO Satellite Centre
+External Guide:
+Contact Details:	
+Name and signature of internal guide	
+Date of Submission:	6/11/2014
+
+	Sachin Vishwanath	9731854093	sachin.9393@gmail.com	
+	
+
+
+
+
+
+
+
+
+ 
+
+INTRODUCTION
+
+Propulsion and Movement
+          
+Spacecraft propulsion is any method that is used to accelerate or manoeuvre a satellite be it in the atmosphere or space. A very common method of doing this is to propel by using gas that is coming out of a very high speed from one of the ends. This can be used to either propel or halt an already moving spacecraft. It can also be used to tilt or manoeuvre it. The gas is propelled at a very high speed using a supersonic De Laval Nozzle. The engine used is called a rocket engine. The most common type of fuel used is either a bi-propellent or a solid fuel for the launching and simple mono-propellent chemical thrusters or resistojet rockets for orbital station keeping.
+Once the satellite has been placed in the orbit,it will experience a drag from the Earth’s thin atmosphere. Due to this, corrective measures are often performed by propulsion. A satellites life is said to be over once it cannot perform any corrective manoeuvres and is dragged into the Earth’s atmosphere.
+
+An image of a thruster:-
+
+
+Propulsion and movement comes into the picture when a specific satellite such as a weather forecasting satellite, a mapping satellite, a defense satellite or any outer space observatory satellite has to focus at a particular spot on Earth or a specific portion of space. This is done with the help of electronically controlled set of thrusters. The number of thrusters used per satellite can be varying compared to the physical aspects of the satellite. A satellite can be raised, lowered or tilted at a specific angle depending upon the area of focus. This is achieved by firing either a single or a set of thrusters in order to vary the alignment of the satellite with respect to a reference axis. 
+Motivation 
+ISRO’s Mars Orbiter Mission which was designed to incorporate autonomous features to handle contingency situations has gained global recognition. Apart from the stringent requirements on propulsion , the current large scale system is exorbitant to carry out minor details such as polarity,thrusters duty cycle determination for the given firing time and also which thruster gives the satellite a better force that is required.Keeping these technicalities into account , which would go a long way in determining the major aspect of the mission itself,we intend to build a prototype version of the same,which would not only allow us to carry out simulations that are useful to larger systems but also extracting information with respect to a low cost simulation model.With the ideas and the determination to complete this project,we are eager to integrate our academic study and incorporate to real life applications. 
+
+OBJECTIVE AND SCOPE 
+
+The objective of this project would be to help scientists who are working on a particular satellite to underscore minor details which are not only useful but also would help them make the system more efficient, predict the behavioural pattern based on the prototype that we would develop.Information regarding thrusters duty cycle for the time that is given by the user,the force of a particular thruster,polarity can be identified.
+Scope of the project that is undertaken is immense, one of the primary application would be to remove the constraints that is faced in large systems due to factors like size,cost.The detailed simulation report that is generated in the project can be used for the actual model such as
+a.	Thruster action time (ta) - The time the thruster is active ( this report would remain the same irrespective of the environment which is used,hence it would be synonymous with regards to our project and the main model)
+b.	Thruster rise time: Thruster tail off time,minimum impulse bit - With respect to all the above mentioned , the reports would give a parallel idea comparing our project and to the applied system.
+Small scale satellites have a lot of application but unless an appropriate thruster is used,their scope is limited.With the onset of this project, a basic development tool will be established that can used in plethora of activities.One major aspect of this project would be to develop a model which carries out majority of the information to be extracted and also help in providing a cheaper alternative for the different run time data that needs to be calculated.Once completed,the model can be fine-tuned for analysis which are required for that particular project. 
+Description
+Technical details with block diagram:
+The said system is a combination of a computer based user interface, an intermediate controller and the actual model used for simulation. The function of each is explained as follows:
+●	A computer based interface is used to deliver commands to the system in terms of thruster firing triggers. For example, a given system with eight thrusters placed at all corners of the satellite, a thruster or a group of thrusters is selected and a preset firing time is input. This command is sent through a serial interface to the controller
+●	The controller interacts with the computer using a serial interface and its main function is to translate the given inputs into the actual drive signals to the motors which enact the function performed by a thruster. 
+●	The simulator uses a dummy model as a satellite and displays the actual physical changes that occur to the position of a satellite and the resultant position of the satellite after the maneuver. This model can be calibrated based on the mass and inertia of the satellite and also lets us take into account any stray movements that can occur during the maneuver
+The computer user interface also allows us to devise an algorithm to bring in the variables of mass of the satellite, torque provided by the motor which will refine the results of the thruster action. The interface can also be used to display the current position of the model with respect to its inclination from the yaw, pitch and roll axes. This further can be used to fire the thrusters such that it reaches a set position. Hence, this model can be used as a generic resource to realise a lot of other data, such as the firing time required for the thrusters to bring the satellite to a certain position, and also design various correction principles to automatically correct any deviations in the position of the satellite. 
+
+    
+The physical model will be fabricated using a suitable material such as Acrylic or aluminium using a CNC laser cutter, which will later be assembled as shown in the diagram to achieve a three dimensional degree of motion. This will enable us to simulate any kind of movement along all three axes and ensure there is no limitation to the capability of the simulator. 
+
+INNOVATIVENESS AND USEFULNESS
+
+The project was intially visualized and the application was encountered upon.It is probabaly the only model which will be developed to formulate similar results with respect to a larger system.To scale down the satellite itself and extracting information which are concordant gives this project an unique identity and to progress on the development and technical  aspect of it would require out of the box thinking with  visualization of the bigger picture (i.e the satellite)  at every stage of the project. 
+The practical advantages and the uses of this project would be to help large satellite systems gain significant data which cannot be simulated on it because of constraints related to price and size.For a satellite with ambitious objectives, data generated on our project would help in generating efficient algorithms for construction and development related to premature stages in designing of the satellite. This will enable scientists to realise their calculations in the real world, at a meagre cost compared to using the full size simulator.
+
+Industrial relevance
+We believe our project has a good feasibility factor given the fact that our data can be implemented or used by systems which require a thruster mechanism . We come across numerous small scale satellites being launched these days apart from the primary ones which help in numerous data acquisition in a plethora of fields. Hence organizations which venture into such applications would enormously benefit from our observations and the simulations that we run. Even student organizations be it from colleges like MIT , IIT are developing a prototype model of the satellites, and we believe our information would contribute significantly in various sectors such as industry,education,sensing and surveillance in developing efficient systems.
+
+Tools (Hardware and software):
+1.	Micro-controller( Arduino, Raspberry Pi..)
+2.	User interface using Visual studio or equivalent
+3.	Choice of Stepper or Servo motor - To be decided based on design and overall mass of structure.
+4.	PC with a serial/USB interface.
+
+
+CONCLUSION
+
+Through this project, we intend to provide an alternative, low-cost and a simple-yet-powerful platform for any activities related to the positioning and propulsion of an object such as a satellite in either the presence or absence of gravitational forces. Though it may not be a replacement to the full sized model that is in use today, but it can definitely act as a first step towards a finer, and more complex calculations that can be polished out of a basic model. Given the constraints of our course of study, we intend to keep it within certain limits of simplicity, which otherwise would not be possible to implement. 
+
+
+References
+1.	Satellite Architecture - By Dr.K . Badari Narayana and others -ISRO
+2.	Chandrayaan-2 module -(internal document) - ISRO
+3.	MODELING AND SIMULATION OF A SATELLITE PROPULSION SUBSYSTEM  - Leonardo Leite Oliva 
+4.	NASA’s Electric Propulsion Program - John W. Dunning, Jr., Scott Benson, Steven Oleson National Aeronautics and Space Administration
+Websites - 
+www.ieeexplore.ieee.org
+www.newsoffice.mit.edu 
+www.dlr.de 
+
