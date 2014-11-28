@@ -50,7 +50,9 @@ Description
 
 Technical details with block diagram:
 
-https://cloud.githubusercontent.com/assets/9498412/5231792/ab7834ee-7765-11e4-94b4-709338b8ae5d.png
+![Block Diagram](https://cloud.githubusercontent.com/assets/9498412/5231792/ab7834ee-7765-11e4-94b4-709338b8ae5d.png)
+
+
 
 The said system is a combination of a computer based user interface, an intermediate controller and the actual model used for simulation. The function of each is explained as follows:
 ●	A computer based interface is used to deliver commands to the system in terms of thruster firing triggers. For example, a given system with eight thrusters placed at all corners of the satellite, a thruster or a group of thrusters is selected and a preset firing time is input. This command is sent through a serial interface to the controller
