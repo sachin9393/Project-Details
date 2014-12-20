@@ -1,1 +1,53 @@
-.
+
+Let’s turn the Sudoku puzzle into a matrix constraint problem. The fact is that the array we will use will be a vector of matrices, not only a matrix (you can imagine a cube with sides divided into 9 equal part and each of the 729 small cubes will contain a number).
+
+Denote S the 9 \times 9 matrix corresponding to the Sudoku puzzle. Consider the 9 \times 9 \times 9 array A which contains only 0 and 1 with the folowing property: A(i,j,k)=1 if S(i,j)=k and A(i,j,k)=0 otherwise. For a 3-dimensional array, talking about lines and columns may be confusing, since we don’t know which is what. We call x-line the subvector A(\cdot,j,k) of the array. We define y-line and z-line in the same way.
+
+What is the advantage of this writing? In the initial setting we wanted to have distinct elements on every line, column or 3\times 3 block.  In this binary setting each x-line, y-line or z-line contains only one element equal to 1 and the rest are zeros. Thus we obtain the constraints
+
+\displaystyle \sum_{i=1}^9 A(i,j,k)= 1
+
+\displaystyle \sum_{j=1}^9 A(i,j,k)= 1
+
+\displaystyle \sum_{k=1}^9 A(i,j,k)= 1
+
+The constraints on the {3 \times 3} blocks can be written as
+
+\displaystyle \sum_{i=1}^3\sum_{j=1}^3 A(i+U,j+V,k)=1 
+
+with {U,V \in \{0,3,6\}}.
+
+We have of course the constraints given by the puzzle: {A(i,j,S(i,j))=1}.
+
+Once we write these constraints, it is enough to run the SDP solver to get a solution. Below you can find the code using YALMIP (code which can be found on the documentation site). The puzzle given to the solver is a very difficult one (you can see it below), but the algorithm does the job in about 5 seconds.
+
+ 
+ 
+ function sudoku
+ 
+S = [0 0 0 6 0 0 2 0 0; 8 0 4 0 3 0 0 0 0; 0 0 0 0 0 9 0 0 0;...
+     4 0 5 0 0 0 0 0 7; 7 1 0 0 0 0 0 0 0; 0 0 3 0 5 0 0 0 8;...
+     3 0 0 0 7 0 0 0 4; 0 0 0 0 0 1 9 0 0; 0 0 0 2 0 0 0 6 0];
+p = 3;
+A = binvar(p^2,p^2,p^2,'full');
+F = [sum(A,1) == 1, sum(A,2) == 1, sum(A,3) == 1];
+ 
+for m = 1:p
+   for n = 1:p
+      for k = 1:p^2
+         s = sum(sum(A((m-1)*p+(1:p),(n-1)*p+(1:p),k)));
+         F = [F, s == 1];
+      end
+   end
+end
+ 
+[i,j,k] = find(S);
+F = [F, A(sub2ind([p^2 p^2 p^2],i,j,k)) == 1];
+ 
+sol = solvesdp(F);
+ 
+Z = 0;
+for i = 1:p^2
+   Z = Z + i*double(A(:,:,i));
+end
+Z
